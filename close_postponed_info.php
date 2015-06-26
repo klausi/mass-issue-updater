@@ -3,15 +3,7 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use Drupal\MassIssueUpdater\Application\ClosePostponedInfoApplication;
-
-/*
-$command = new ClosePostponedInfoCommand();
-$application = new Application();
-$application->add($command);
-$application->setDefaultCommand($command->getName());
-$application->run();*/
+use Drupal\MassIssueUpdater\Command\ClosePostponedInfoApplication;
 
 $application = new ClosePostponedInfoApplication();
 $application->run();
-
