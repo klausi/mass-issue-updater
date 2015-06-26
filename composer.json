@@ -1,0 +1,21 @@
+{
+    "name": "drupal/mass-issue-updater",
+    "type": "application",
+    "description": "Updates the issue tracker at drupal.org",
+    "keywords": ["scraper"],
+    "homepage": "https://github.com/klausi/mass-issue-updater",
+    "license": "GPLv2+",
+    "authors": [
+        {
+            "name": "Klaus Purer",
+            "email": "klaus.purer@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Drupal\\MassIssueUpdater\\": "" }
+    },
+    "require": {
+        "fabpot/goutte": "^3.1",
+        "symfony/console": "^2.7"
+    }
+}
